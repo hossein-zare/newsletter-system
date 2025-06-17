@@ -47,8 +47,8 @@ Accept: application/json
 
 - #### Create Subscriber
   `POST /api/subscribers`  
-  **Body Example (JSON):**
-  ```json
+
+- ```json
   {
     "name" "John Doe",
     "email": "example@example.com",
@@ -57,7 +57,7 @@ Accept: application/json
 
 - #### Update Subscriber
   `PUT /api/subscribers/{id}`  
-  **Body Example (JSON):**
+
   ```json
   {
     "name" "John Doe",
