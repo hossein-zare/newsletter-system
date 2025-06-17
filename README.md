@@ -67,3 +67,6 @@ Accept: application/json
 
 - #### Delete Subscriber
   `DELETE /api/subscribers/{id}`
+
+## Important
+Check the `laravel.log` file to see the logs for `SendNewsLetterJob`.
