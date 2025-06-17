@@ -37,8 +37,6 @@ All API requests must include the following header:
 Accept: application/json
 ```
 
-### Endpoints
-
 - #### List Subscribers
   `GET /api/subscribers`  
 
