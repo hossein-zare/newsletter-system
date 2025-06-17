@@ -22,6 +22,11 @@
     ```bash
     composer run dev
     ```
+   
+7. Open a new terminal and run the following command:
+    ```bash
+    php artisan queue:work
+    ```
 
 ## Routes
 
