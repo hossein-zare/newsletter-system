@@ -1,0 +1,15 @@
+button {
+    @apply cursor-pointer;
+}
+
+.btn {
+    @apply rounded-md px-3 py-2 outline-0 text-center font-medium text-sm cursor-pointer;
+
+    &.btn-primary {
+        @apply bg-blue-500 hover:bg-blue-600 text-white;
+    }
+
+    &:disabled {
+        @apply pointer-events-none opacity-50;
+    }
+}

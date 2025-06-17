@@ -1,0 +1,35 @@
+form, .form {
+    .form-controls {
+        @apply space-y-3;
+
+        .form-control {
+            @apply text-start;
+
+            &[data-invalid="true"] {
+                label, .label {
+                    @apply text-red-500;
+                }
+
+                input {
+                    @apply border-red-500 ring-red-400;
+                }
+            }
+        }
+    }
+
+    .form-controls + .form-buttons {
+        @apply mt-5;
+    }
+
+    label, .label {
+        @apply block mb-1 cursor-pointer select-none;
+
+        &.checkbox {
+            @apply flex items-center mb-0;
+
+            > span {
+                @apply ms-2;
+            }
+        }
+    }
+}

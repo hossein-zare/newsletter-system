@@ -1,0 +1,29 @@
+@section('title', __('Home'))
+
+<x-layouts.app>
+    <div class="bg-white shadow rounded-xl p-5">
+        <h1 class="text-center">{{ __('Subscribe to the newsletter') }}</h1>
+
+        <form action="{{ route('client.index') }}" method="POST" class="mt-5">
+            @csrf
+
+            <div class="form-controls">
+                <x-form-control name="name">
+                    <label for="name">{{ __('Name') }}</label>
+                    <input type="text" id="name" name="name" value="{{ old('name') }}" class="default">
+                    <x-input-error :messages="$errors->get('name')" />
+                </x-form-control>
+
+                <x-form-control name="email">
+                    <label for="email">{{ __('Email') }}</label>
+                    <input type="email" id="email" name="email" value="{{ old('email') }}" class="default">
+                    <x-input-error :messages="$errors->get('email')" />
+                </x-form-control>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-primary">{{ __('Subscribe') }}</button>
+            </div>
+        </form>
+    </div>
+</x-layouts.app>
