@@ -9,7 +9,7 @@
     npm install && npm run build
     ```
 
-3. Rename `.env.example` to `.env` and configure database
+3. Rename `.env.example` to `.env` and configure database settings.
 4.
     ```bash
     php artisan key:generate
