@@ -48,7 +48,7 @@ Accept: application/json
 - #### Create Subscriber
   `POST /api/subscribers`  
 
-- ```json
+  ```json
   {
     "name" "John Doe",
     "email": "example@example.com",
